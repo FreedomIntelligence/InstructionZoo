@@ -39,3 +39,4 @@ This is an on-going project. The format and explaination of the following conten
 | [GuanacoDataset/.../paper_answers-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/paper_answers-utf8.json) | 23393 | CH, DE, EN, JA, TC | paragraph-level QA, paper QA, Multi-lingual | |
 | [GuanacoDataset/.../paper_questions-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/paper_questions-utf8.json) | 23840 | CH, DE, EN, JA, TC | paragraph-level QA, paper QA, Multi-lingual | |
 | [PhoebusSi/alpaca-CoT](https://github.com/PhoebusSi/alpaca-CoT) | EN | Chain-of-Thought | | |
+| [QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT) | | | | |
