@@ -6,5 +6,6 @@ A collection of open-source Instruction-tuning dataset to train chat-based LLMs 
 ## Alpaca in different languages
 
 | Dataset | Size | Language | Type | Generation method |
+|:---------:| :---------:|:---------:|:---------:|:---------:|
 
 ## Instruction Dataset Collection
