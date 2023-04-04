@@ -2,7 +2,7 @@
 
 A collection of open-source Instruction-tuning dataset to train chat-based LLMs (ChatGPT,LLaMA,Alpaca).
 
-This is an on-going project.
+This is an on-going project. The format and explaination of the following contents will be updated soon. (By Zhihan)
 
 
 ## Alpaca in different languages
@@ -22,7 +22,7 @@ This is an on-going project.
 
 ## Instruction Dataset Collection
 
-| <div style="width:2cm"> Dataset </div> | Size | Language | Domain | Generation method |
+| Dataset | Size | Language | Domain | Generation method |
 |:---------| :---------:|:---------:|:---------:|:---------|
 | [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E5%85%B6%E4%BB%96%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A1%A5%E5%85%85) | 226 | CH | topic-specific | Generate Chinese instructions under various topics by humans, such as bussiness management, education, Romance of the Three Kingdoms, etc. |
 | [sahil280114/codealpaca](https://github.com/sahil280114/codealpaca) | 20023 | EN | Code | Self-instuct with prompts to focus on code generation/edting/optimization tasks, using text-davinci-003. |
