@@ -1,12 +1,10 @@
 # InstructionZoo
 
-A collection of Instruction-tuning dataset.
+A collection of open-source Instruction-tuning dataset to train chat-based LLMs (ChatGPT,LLaMA,Alpaca).
 
-## Table of Contents
-
-## The template
 
 ## Alpaca in different languages
 
+| Dataset | Size | Language | Type | Generation method |
 
 ## Instruction Dataset Collection
