@@ -14,7 +14,8 @@ This is an on-going project.
 | [carbonz0/alpaca-chinese-dataset](https://github.com/carbonz0/alpaca-chinese-dataset) | 20456 | CH | Translate Stanford Alpaca dataset into Chinese by machine, then self-instruct.|
 | [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E7%BF%BB%E8%AF%91%E5%90%8E%E7%9A%84%E4%B8%AD%E6%96%87%E6%95%B0%E6%8D%AE) | 19442 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT, and check them by humans.|
 | [ymcui/Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main/data) | 51458 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT API, and discard some of them.|
-| [A-baoYang/alpaca-7b-chinese](https://github.com/A-baoYang/alpaca-7b-chinese/blob/main/data/alpaca-zhTW.json) | 20465 | TC | Translate Stanford Alpaca dataset into traditional Chinese using OpenCC.|
+| [A-baoYang/alpaca-7b-chinese/.../alpaca-zhTW.json](https://github.com/A-baoYang/alpaca-7b-chinese/blob/main/data/alpaca-zhTW.json) | 20465 | TC | Translate Stanford Alpaca dataset into traditional Chinese using OpenCC.|
+| [A-baoYang/alpaca-7b-chinese/.../alpaca-en-zh.json](https://github.com/A-baoYang/alpaca-7b-chinese/blob/main/data/alpaca-en-zh.json) | 124469 | CH, EN | Combine the English instruction/input and traditional Chinese output by ChatGPT API ( gpt-3.5-turbo) .|
 
 ## Instruction Dataset Collection
 
