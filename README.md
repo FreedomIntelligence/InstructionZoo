@@ -4,8 +4,30 @@ A collection of open-source Instruction-tuning dataset to train chat-based LLMs 
 
 This is an on-going project. The format and explaination of the following contents will be updated soon. (By Zhihan)
 
+## Table of Contents
 
-## Alpaca in different languages
+## The template
+
+```
+## [({owner}/{project-name)}]{https://github.com/link/to/project}
+
+- Size:
+- Language: 
+- Summary:
+- Generateion Method:
+- Template: (if applicable)
+- Example: (if applicable)
+- Paper:
+- License:
+```
+
+## The English and Miltilingual Instruction Datasets
+
+## The Chinese Instruction Datasets
+
+## Former Tables
+
+### Alpaca
 
 | Dataset | Size | Language | Generation method |
 |:---------| :---------:|:---------:|:---------|
