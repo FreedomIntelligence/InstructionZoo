@@ -115,6 +115,48 @@ This is an on-going project. The format and explaination of the following conten
 
 # The Chinese Instruction Datasets
 
+## Chinese Alpaca
+
+### [carbonz0/alpaca-chinese-dataset](https://github.com/carbonz0/alpaca-chinese-dataset) 
+* Size: 20,456 instructions
+* Language: CH
+* Generateion Method: Translate Alpaca into Chinese by machine and then clean.
+
+### [hikariming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset) 
+* Size: 19,442 instructions
+* Language: CH
+* Generateion Method: Translate Alpaca into Chinese by ChatGPT, and check them by humans
+
+### [ymcui/Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) 
+* Size: 51,458 instructions
+* Language: CH
+* Generateion Method: Translate Alpaca into Chinese by ChatGPT, and discard some of them.
+
+### [LC1332/Chinese-alpaca-lora](https://github.com/LC1332/Chinese-alpaca-lora) 
+* Size: 51,672 instructions
+* Language: CH
+* Generateion Method: Translate Stanford Alpaca dataset into Chinese by ChatGPT.
+
+### [A-baoYang/alpaca-7b-chinese](https://github.com/A-baoYang/alpaca-7b-chinese) 
+* Size: 20,465 instructions
+* Language: TC
+* Generateion Method: Translate Stanford Alpaca dataset into traditional Chinese using OpenCC.
+
+### [A-baoYang/alpaca-7b-chinese](https://github.com/A-baoYang/alpaca-7b-chinese) 
+* Size: 124,469 instructions
+* Language: EN, TC
+* Generateion Method: Combine the English instruction/input and traditional Chinese output by ChatGPT.
+
+### [ntunlplab/traditional-chinese-alpaca](https://github.com/ntunlplab/traditional-chinese-alpaca) 
+* Size: 52,002 instructions
+* Language: EN, TC
+* Generateion Method: A Traditional-Chinese version of the Alpaca dataset, whose instruction part is left as English.
+
+### [ntunlplab/traditional-chinese-alpaca](https://github.com/ntunlplab/traditional-chinese-alpaca) 
+* Size: 52,002 instructions
+* Language: EN, TC
+* Generateion Method: An Traditional-Chinese version of the Alpaca dataset, where there are English and traditional Chinese versions of one single instruction.
+
 # The Miltilingual Instruction Datasets
 
 ## [bigscience/xP3](https://github.com/bigscience-workshop/xmtf) 
@@ -130,20 +172,8 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/bigscience/xP3
 * License:
 
+
 # Former Tables
-
-### Alpaca
-
-| Dataset | Size | Language | Generation method |
-|:---------| :---------:|:---------:|:---------|
-| [carbonz0/alpaca-chinese-dataset](https://github.com/carbonz0/alpaca-chinese-dataset) | 20456 | CH | Translate Stanford Alpaca dataset into Chinese by machine, then self-instruct.|
-| [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E7%BF%BB%E8%AF%91%E5%90%8E%E7%9A%84%E4%B8%AD%E6%96%87%E6%95%B0%E6%8D%AE) | 19442 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT, and check them by humans.|
-| [ymcui/Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main/data) | 51458 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT API, and discard some of them.|
-| [A-baoYang/alpaca-7b-chinese/.../alpaca-zhTW.json](https://github.com/A-baoYang/alpaca-7b-chinese/blob/main/data/alpaca-zhTW.json) | 20465 | TC | Translate Stanford Alpaca dataset into traditional Chinese using OpenCC.|
-| [A-baoYang/alpaca-7b-chinese/.../alpaca-en-zh.json](https://github.com/A-baoYang/alpaca-7b-chinese/blob/main/data/alpaca-en-zh.json) | 124469 | CH, EN | Combine the English instruction/input and traditional Chinese output by ChatGPT API ( gpt-3.5-turbo) .|
-| [ntunlplab/traditional-chinese-alpaca/.../alpaca-tw_en_instruction.json](https://github.com/ntunlplab/traditional-chinese-alpaca/blob/main/data/alpaca-tw_en_instruction.json) | 52002 | CH, EN | A Traditional-Chinese version of the Alpaca dataset, whose instruction part is left as English. |
-| [ntunlplab/traditional-chinese-alpaca/.../alpaca-tw_en-align.json](https://github.com/ntunlplab/traditional-chinese-alpaca/blob/main/data/alpaca-tw_en-align.json) | 52002 | CH, EN | An Traditional-Chinese version of the Alpaca dataset, where there are English and traditional Chinese versions of one single instruction. |
-| [LC1332/Chinese-alpaca-lora](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/trans_chinese_alpaca_data.json) | 51672 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT API.|
 
 ## Instruction Dataset Collection
 
