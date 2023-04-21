@@ -23,6 +23,52 @@ This is an on-going project. The format and explaination of the following conten
 
 ## The English and Miltilingual Instruction Datasets
 
+### [tatsu-lab/Alpaca](https://github.com/tatsu-lab/stanford_alpaca) 
+* Size:
+* Language:
+* Summary:
+* Generateion Method:
+* Paper:
+* HuggingFace: (if applicable)
+* Demo: (if applicable)
+* License:
+
+### [bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource) 
+* Size: 180 tasks, 2085 instructions
+* Language: EN
+* Summary: PromptSource aims at designing a prompt query such that the answer can be mapped onto the specific dataset
+* Generateion Method:
+  *  Five steps: (S1) Dataset Exploration; (S2) Prompt Writing; (S3) Prompt Documentation; (S4) Iteration and Variation; (S5) Global Review.
+* Paper: [PromptSource: An Integrated Development Environment and Repository for Natural Language Prompts](https://arxiv.org/pdf/2202.01279.pdf)
+* HuggingFace: https://huggingface.co/spaces/bigscience/promptsource/tree/main
+* Demo: https://huggingface.co/spaces/bigscience/promptsource
+* License:
+
+### [bigscience/P3](https://github.com/bigscience-workshop/promptsource) 
+* Size: 270 tasks, 2085 instructions
+* Language: EN 
+* Summary: 
+  * P3 has  a diverse set of NLP tasks including multiple-choice QA, sentiment analysis or natural language inference. 
+  * There is an average of 7.6 prompts per data subset and an average 5.6 original-task prompts per data subset in P3.
+* Generateion Method: A subset of the prompts available in Promptsource.
+* Paper: [Multitask Prompted Training Enables Zero-Shot Task Generalization](https://arxiv.org/pdf/2110.08207.pdf)
+* HuggingFace: https://huggingface.co/datasets/bigscience/P3
+* License:
+
+### [bigscience/xP3](https://github.com/bigscience-workshop/xmtf) 
+* Size: 83 tasks
+* Language: Multilingual (46 languages)
+* Summary: 
+  * xP3 is a mixture of 13 training tasks in 46 languages with English prompts, based on 13 types of datasets and 83 data subsets in total. 
+  * Moreover, there is a xP3 Dataset Family, including the following two datasets:
+    * xP3mt is a mixture of 13 training tasks in 46 languages with prompts in 20 languages (machine-translated from English); 
+    * xP3all consists of xP3 itself and evaluation datasets adding an additional 3 tasks for a total of 16 tasks in 46 languages with English prompts.
+* Generateion Method: Build on the P3 task taxonomy and add 28 new multilingual datasets.
+* Paper: [Crosslingual Generalization through Multitask Finetuning](https://arxiv.org/pdf/2211.01786.pdf)
+* HuggingFace: https://huggingface.co/datasets/bigscience/xP3
+* License:
+
+
 ## The Chinese Instruction Datasets
 
 ## Former Tables
