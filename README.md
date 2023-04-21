@@ -21,7 +21,7 @@ This is an on-going project. The format and explaination of the following conten
 - License:
 ```
 
-# The English and Miltilingual Instruction Datasets
+# The English Instruction Datasets
 
 ## [tatsu-lab/Alpaca](https://github.com/tatsu-lab/stanford_alpaca) 
 * Size: 175 seed instructions, 52,002 instructions
@@ -177,15 +177,6 @@ This is an on-going project. The format and explaination of the following conten
   * Use a similar method as Alpaca for generating the resulting instructions.
 * License:
 
-## [bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource) 
-* Size:
-* Language:
-* Summary:
-* Generateion Method:.
-* Paper:
-* HuggingFace: 
-* Demo:
-* License:
 
 ## Chinese Alpaca
 
@@ -244,6 +235,20 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/bigscience/xP3
 * License:
 
+## [JosephusCheung/GuanacoDataset](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset) 
+* Size: 380,835 instructions in total
+* Language: CH, DE, EN, JA, TC
+* Summary: Guanaco dataset builds upon the 175 tasks from Alpaca, containing 3 versions with different sizes and methods.
+* Generateion Method:
+  * Original Version: Rewrite 175 Alpaca seed tasks in different languages, and add new tasks specifically designed for English grammar analysis, natural language understanding, cross-lingual self-awareness, and explicit content recognition.
+  * Mixed Version: The original 175 tasks were translated into 4 versions and regenerated independently, excluding Deutsch.
+  * MIni Version: 52K instrucrion dataset, which is included in the Mixed Version.
+* HuggingFace:
+  * Original Version https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_chat_all-utf8.json
+  * Mixed Version https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_non_chat-utf8.json
+  * MIni Version https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_non_chat_mini_52K-utf8.json
+* License:
+
 
 # Former Tables
 
@@ -253,9 +258,6 @@ This is an on-going project. The format and explaination of the following conten
 |:---------| :---------:|:---------:|:---------:|:---------|
 | [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E5%85%B6%E4%BB%96%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A1%A5%E5%85%85) | 226 | CH | topic-specific | Generate Chinese instructions under various topics by humans, such as bussiness management, education, Romance of the Three Kingdoms, etc. |
 | [sahil280114/codealpaca](https://github.com/sahil280114/codealpaca) | 20023 | EN | Code | Self-instuct with prompts to focus on code generation/edting/optimization tasks, using text-davinci-003. |
-| [GuanacoDataset/.../guanaco_chat_all-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_chat_all-utf8.json) | 48967 | CH, DE, EN, JA, TC | Multiturn Chat, Multi-lingual | The dataset for the Guanaco model  builds upon the 175 tasks from the Alpaca model by providing rewrites of seed tasks in different languages and adding new tasks specifically designed for English grammar analysis, natural language understanding, cross-lingual self-awareness, and explicit content recognition. |
-| [GuanacoDataset/.../guanaco_non_chat-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_non_chat-utf8.json) | 279644 | CH, DE, EN, JA, TC | Multi-lingual | The original 175 tasks were translated into 4 versions and regenerated independently. |
-| [GuanacoDataset/.../guanaco_non_chat_mini_52K-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_non_chat_mini_52K-utf8.json) | 52224 | CH, DE, EN, JA, TC | Multi-lingual | A mini version of 52K multi-lang dataset. |
 | [GuanacoDataset/.../general_ans-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/general_ans-utf8.json) | 75899 | CH, DE, EN, JA, TC | paragraph-level QA, Multi-lingual | |
 | [GuanacoDataset/.../general_questions-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/general_questions-utf8.json) | 82867 | CH, DE, EN, JA, TC | paragraph-level QA, Multi-lingual | Similar questions are combined to form a tree-like structure, and graph theory algorithms are used to process user questions, content summaries, and contextual logic. |
 | [GuanacoDataset/.../paper_answers-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/paper_answers-utf8.json) | 23393 | CH, DE, EN, JA, TC | paragraph-level QA, paper QA, Multi-lingual | |
