@@ -4,9 +4,9 @@ A collection of open-source Instruction-tuning dataset to train chat-based LLMs 
 
 This is an on-going project. The format and explaination of the following contents will be updated soon. (By Zhihan)
 
-## Table of Contents
+# Table of Contents
 
-## The template
+# The template
 
 ```
 ## [({owner}/{project-name)}]{https://github.com/link/to/project}
@@ -15,25 +15,31 @@ This is an on-going project. The format and explaination of the following conten
 - Language: 
 - Summary:
 - Generateion Method:
-- Template: (if applicable)
-- Example: (if applicable)
 - Paper:
+- HuggingFace: (if applicable)
+- Demo: (if applicable)
 - License:
 ```
 
-## The English and Miltilingual Instruction Datasets
+# The English and Miltilingual Instruction Datasets
 
-### [tatsu-lab/Alpaca](https://github.com/tatsu-lab/stanford_alpaca) 
-* Size:
-* Language:
-* Summary:
-* Generateion Method:
-* Paper:
-* HuggingFace: (if applicable)
-* Demo: (if applicable)
-* License:
+## [tatsu-lab/Alpaca](https://github.com/tatsu-lab/stanford_alpaca) 
+* Size: 175 seed instructions, 52,002 instructions
+* Language: EN
+* Summary: Alpaca contains 52K instruction-following data, consisting of instruction, input and output. 
+* Generateion Method: Self-instruct with human written 175 seed tasks.
+* Paper: [Self-Instruct: Aligning Language Model with Self Generated Instructions](https://arxiv.org/abs/2212.10560)
+* HuggingFace: https://huggingface.co/datasets/tatsu-lab/alpaca
+* License: [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB)
 
-### [bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource) 
+## [gururise/Cleaned Alpaca](https://github.com/gururise/AlpacaDataCleaned) 
+* Size: 51,713 instructions
+* Language: EN
+* Summary: Cleaned Alpaca Dataset helps solve the folowing issues: Hallucinations, Merged Instructions, Empty outputs, Empty code examples, Instructions to generate images, N/A outputs, Inconsistent input field, Wrong answers, Non-Sensical/Unclear instructions, and Extraneous escape and control characters.
+* HuggingFace: https://huggingface.co/datasets/yahma/alpaca-cleaned
+* License: [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB)
+
+## [bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource) 
 * Size: 180 tasks, 2,085 instructions
 * Language: EN
 * Summary: PromptSource aims at designing a prompt query such that the answer can be mapped onto the specific dataset
@@ -44,7 +50,7 @@ This is an on-going project. The format and explaination of the following conten
 * Demo: https://huggingface.co/spaces/bigscience/promptsource
 * License:
 
-### [bigscience/P3](https://github.com/bigscience-workshop/promptsource) 
+## [bigscience/P3](https://github.com/bigscience-workshop/promptsource) 
 * Size: 270 tasks, 2,085 instructions
 * Language: EN 
 * Summary: P3 has a diverse set of NLP tasks, including multiple-choice QA, sentiment analysis or natural language inference. 
@@ -53,7 +59,7 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/bigscience/P3
 * License:
 
-### [allenai/natural-instructions](https://github.com/allenai/natural-instructions) 
+## [allenai/natural-instructions](https://github.com/allenai/natural-instructions) 
 * Size: 61 tasks, 61 instructions
 * Language: EN
 * Summary: Natural Instruct v1 is a dataset of 61 distinct tasks, their human-authored instructions, and 193k task instances. 
@@ -68,7 +74,7 @@ This is an on-going project. The format and explaination of the following conten
 * Demo: https://instructions.apps.allenai.org/
 * License:
 
-### [allenai/super-natural-instructions](https://github.com/allenai/natural-instructions) 
+## [allenai/super-natural-instructions](https://github.com/allenai/natural-instructions) 
 * Size: 1,616 tasks, 1,616 instructions
 * Language: EN
 * Summary: Super-Natural-Instruct v2 is built on Natural Instruct v1, has a simpler schema and contains over 1.5k tasks.
@@ -82,7 +88,7 @@ This is an on-going project. The format and explaination of the following conten
 * Demo: https://instructions.apps.allenai.org/
 * License:
 
-### [google-research/FLAN 2021](https://github.com/google-research/flan) 
+## [google-research/FLAN 2021](https://github.com/google-research/flan) 
 * Size: 62 tasks
 * Language: EN
 * Summary: FLAN 2021 aggregates 62 text datasets on Tensorflow Datasets into a single mixture. It is currently not public.
@@ -90,14 +96,14 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [Finetuned Language Models Are Zero-Shot Learners](https://arxiv.org/pdf/2109.01652.pdf)
 * License:
 
-### [google-research/FLAN 2022 Collection](https://github.com/google-research/FLAN/tree/main/flan/v2) 
+## [google-research/FLAN 2022 Collection](https://github.com/google-research/FLAN/tree/main/flan/v2) 
 * Size: 1,836 tasks, 18,360 instructions
 * Language: EN
 * Summary:  Flan 2022 Collection combines Flan 2021, P3 Dataset Family, Super-Natural Instructions, with some additional reasoning, dialog, and program synthesis datasets.
 * Paper: [The Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf)
 * License:
 
-### [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
+## [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
 * Size: 240,000 instructions
 * Language: EN
 * Summary: Unnatural Instructions consist of a core dataset of 68,478 instruction-input-output triplets, and a full dataset.
@@ -107,11 +113,11 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [Unnatural Instructions: Tuning Language Models with (Almost) No Human Labor](https://arxiv.org/pdf/2212.09689.pdf)
 * License:
 
-## The Chinese Instruction Datasets
+# The Chinese Instruction Datasets
 
-## The Miltilingual Instruction Datasets
+# The Miltilingual Instruction Datasets
 
-### [bigscience/xP3](https://github.com/bigscience-workshop/xmtf) 
+## [bigscience/xP3](https://github.com/bigscience-workshop/xmtf) 
 * Size: 83 tasks
 * Language: Multilingual (46 languages)
 * Summary: 
@@ -124,14 +130,12 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/bigscience/xP3
 * License:
 
-## Former Tables
+# Former Tables
 
 ### Alpaca
 
 | Dataset | Size | Language | Generation method |
 |:---------| :---------:|:---------:|:---------|
-| [tatsu-lab/stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca) |  52002 | EN | Self-instruct with human written 175 seed tasks using text-davinci-003 |
-| [gururise/AlpacaDataCleaned](https://github.com/gururise/AlpacaDataCleaned) | 51713 | EN | A cleaned version of Stanford Alpaca Dataset, in order to solve issues like Hallucinations, Merged Instructions, Empty outputs, etc.|
 | [carbonz0/alpaca-chinese-dataset](https://github.com/carbonz0/alpaca-chinese-dataset) | 20456 | CH | Translate Stanford Alpaca dataset into Chinese by machine, then self-instruct.|
 | [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E7%BF%BB%E8%AF%91%E5%90%8E%E7%9A%84%E4%B8%AD%E6%96%87%E6%95%B0%E6%8D%AE) | 19442 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT, and check them by humans.|
 | [ymcui/Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main/data) | 51458 | CH | Translate Stanford Alpaca dataset into Chinese by ChatGPT API, and discard some of them.|
