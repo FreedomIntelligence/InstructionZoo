@@ -39,6 +39,16 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/yahma/alpaca-cleaned
 * License: [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB)
 
+## [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
+* Size: 240,000 instructions
+* Language: EN
+* Summary: Unnatural Instructions consist of a core dataset of 68,478 instruction-input-output triplets, and a full dataset.
+* Generateion Method: 
+  * Step 1 (Core Dataset Generation): Collect 64,000 examples by prompting a language model with three seed examples of instructions and eliciting a fourth, following a strict instruction-input-output format.
+  * Step 2 (Template Expansion): Prompt a language model to reformulate the tasks in the core dataset, and collect two alternative formulations for each generated task
+* Paper: [Unnatural Instructions: Tuning Language Models with (Almost) No Human Labor](https://arxiv.org/pdf/2212.09689.pdf)
+* License:
+
 ## [bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource) 
 * Size: 180 tasks, 2,085 instructions
 * Language: EN
@@ -103,17 +113,30 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [The Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf)
 * License:
 
-## [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
-* Size: 240,000 instructions
-* Language: EN
-* Summary: Unnatural Instructions consist of a core dataset of 68,478 instruction-input-output triplets, and a full dataset.
-* Generateion Method: 
-  * Step 1 (Core Dataset Generation): Collect 64,000 examples by prompting a language model with three seed examples of instructions and eliciting a fourth, following a strict instruction-input-output format.
-  * Step 2 (Template Expansion): Prompt a language model to reformulate the tasks in the core dataset, and collect two alternative formulations for each generated task
-* Paper: [Unnatural Instructions: Tuning Language Models with (Almost) No Human Labor](https://arxiv.org/pdf/2212.09689.pdf)
-* License:
 
 # The Chinese Instruction Datasets
+
+## [FlagOpen/FlagInstruct](https://github.com/flagopen/flaginstruct)
+* Size: 2K tasks, 191,191 instructions in total
+* Language: CH
+* Summary: Chinese Open Instruction Generalist (COIG) is a Chinese instruction dataset consisting of 4 sub-tasks.
+* Generateion Method:
+  * Task 1: Translated Instructions (67,798)
+    * Translate the following datasets into Chinese: 1,616 task descriptions in Super-Natural-Instruct v2 along with a single instance for each of them; 175 seed tasks in Self-instruct; 66,007 instructions from Unnatural Instructions.
+  * Task 2: Exam Instructions (63,532)
+    * Exams include The Chinese National College Entrance Examination (高考), Middle School Entrance Examinations (中考), and Civil Servant Examination (公务员考试).
+    * Turn them into Chain-of-Thought (CoT) corpus by extracting six informative elements from original exam questions, including instruction, question context, question, answer, answer analysis, and coarse-grained subject.
+  * Task 3: Human Value Alignment Instructions (34,471)
+    * Select a set of samples that present shared human values in the Chinese-speaking world, and get 50 seed instructions and 3k resulting instructions.
+    * Some additional sets of samples that present regional-culture or country-specific human values are also added.
+  * Task 4: Counterfactural Correction Multi-round Chat (13,653)
+    * The aim is to alleviate and resolve the pain points of hallucination and factual inconsistency in current LLMs.
+    * Based on [CN-DBpedia knowledge graph dataset](https://link.springer.com/chapter/10.1007/978-3-319-60045-1_44), CCMC has ~13,000 dialogues with an average of 5 rounds per dialogue, resulting in ~65,000 rounds of chat.
+  * Leetcode Instructions (11,737)
+    * 2,589 programming questions from [Leetcode](https://github.com/doocs/leetcode).
+* Paper: [Chinese Open Instruction Generalist: A Preliminary Release](https://arxiv.org/pdf/2304.07987.pdf)
+* HuggingFace: https://huggingface.co/datasets/BAAI/COIG
+* License: MIT License
 
 ## Chinese Alpaca
 
