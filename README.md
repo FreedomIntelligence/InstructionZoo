@@ -34,42 +34,95 @@ This is an on-going project. The format and explaination of the following conten
 * License:
 
 ### [bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource) 
-* Size: 180 tasks, 2085 instructions
+* Size: 180 tasks, 2,085 instructions
 * Language: EN
 * Summary: PromptSource aims at designing a prompt query such that the answer can be mapped onto the specific dataset
 * Generateion Method:
-  *  Five steps: (S1) Dataset Exploration; (S2) Prompt Writing; (S3) Prompt Documentation; (S4) Iteration and Variation; (S5) Global Review.
+  *  Five steps: Dataset Exploration, Prompt Writing, Prompt Documentation, Iteration and Variation, and Global Review.
 * Paper: [PromptSource: An Integrated Development Environment and Repository for Natural Language Prompts](https://arxiv.org/pdf/2202.01279.pdf)
 * HuggingFace: https://huggingface.co/spaces/bigscience/promptsource/tree/main
 * Demo: https://huggingface.co/spaces/bigscience/promptsource
 * License:
 
 ### [bigscience/P3](https://github.com/bigscience-workshop/promptsource) 
-* Size: 270 tasks, 2085 instructions
+* Size: 270 tasks, 2,085 instructions
 * Language: EN 
-* Summary: 
-  * P3 has  a diverse set of NLP tasks including multiple-choice QA, sentiment analysis or natural language inference. 
-  * There is an average of 7.6 prompts per data subset and an average 5.6 original-task prompts per data subset in P3.
+* Summary: P3 has a diverse set of NLP tasks, including multiple-choice QA, sentiment analysis or natural language inference. 
 * Generateion Method: A subset of the prompts available in Promptsource.
 * Paper: [Multitask Prompted Training Enables Zero-Shot Task Generalization](https://arxiv.org/pdf/2110.08207.pdf)
 * HuggingFace: https://huggingface.co/datasets/bigscience/P3
 * License:
 
+### [allenai/natural-instructions](https://github.com/allenai/natural-instructions) 
+* Size: 61 tasks, 61 instructions
+* Language: EN
+* Summary: Natural Instruct v1 is a dataset of 61 distinct tasks, their human-authored instructions, and 193k task instances. 
+* Generateion Method:
+  * Map exist datasets into Instruction Schema.
+  * Instruction Schema:
+    * Part I - Title + Definition + Things-to-Avoid + Emphasis-and-Caution
+    * Part II - Positive Example: Input + Output + Reason
+    * Part III - Negative Example: Input + Output + Reason + Suggestions to be modified to be positive
+    * Part IV - Prompt
+* Paper: [Cross-Task Generalization via Natural Language Crowdsourcing Instructions](https://arxiv.org/pdf/2104.08773.pdf)
+* Demo: https://instructions.apps.allenai.org/
+* License:
+
+### [allenai/super-natural-instructions](https://github.com/allenai/natural-instructions) 
+* Size: 1,616 tasks, 1,616 instructions
+* Language: EN
+* Summary: Super-Natural-Instruct v2 is built on Natural Instruct v1, has a simpler schema and contains over 1.5k tasks.
+* Generateion Method:
+  * Map exist datasets into Instruction Schema.
+  * Instruction Schema:
+    * Part I - Definition
+    * Part II - Positive Example: Input + Output + Reason
+    * Part III - Negative Example: Input + Output + Reason + Suggestions to be modified to be positive
+* Paper: [Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks](https://arxiv.org/pdf/2204.07705.pdf)
+* Demo: https://instructions.apps.allenai.org/
+* License:
+
+### [google-research/FLAN 2021](https://github.com/google-research/flan) 
+* Size: 62 tasks
+* Language: EN
+* Summary: FLAN 2021 aggregates 62 text datasets on Tensorflow Datasets into a single mixture. It is currently not public.
+* Generateion Method: Map exist datasets into Instruction Schema.
+* Paper: [Finetuned Language Models Are Zero-Shot Learners](https://arxiv.org/pdf/2109.01652.pdf)
+* License:
+
+### [google-research/FLAN 2022 Collection](https://github.com/google-research/FLAN/tree/main/flan/v2) 
+* Size: 1,836 tasks, 18,360 instructions
+* Language: EN
+* Summary:  Flan 2022 Collection combines Flan 2021, P3 Dataset Family, Super-Natural Instructions, with some additional reasoning, dialog, and program synthesis datasets.
+* Paper: [The Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf)
+* License:
+
+### [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
+* Size: 240,000 instructions
+* Language: EN
+* Summary: Unnatural Instructions consist of a core dataset of 68,478 instruction-input-output triplets, and a full dataset.
+* Generateion Method: 
+  * Step 1 (Core Dataset Generation): Collect 64,000 examples by prompting a language model with three seed examples of instructions and eliciting a fourth, following a strict instruction-input-output format.
+  * Step 2 (Template Expansion): Prompt a language model to reformulate the tasks in the core dataset, and collect two alternative formulations for each generated task
+* Paper: [Unnatural Instructions: Tuning Language Models with (Almost) No Human Labor](https://arxiv.org/pdf/2212.09689.pdf)
+* License:
+
+## The Chinese Instruction Datasets
+
+## The Miltilingual Instruction Datasets
+
 ### [bigscience/xP3](https://github.com/bigscience-workshop/xmtf) 
 * Size: 83 tasks
 * Language: Multilingual (46 languages)
 * Summary: 
-  * xP3 is a mixture of 13 training tasks in 46 languages with English prompts, based on 13 types of datasets and 83 data subsets in total. 
+  * xP3 is a mixture of 13 training tasks in 46 languages with English prompts. 
   * Moreover, there is a xP3 Dataset Family, including the following two datasets:
-    * xP3mt is a mixture of 13 training tasks in 46 languages with prompts in 20 languages (machine-translated from English); 
-    * xP3all consists of xP3 itself and evaluation datasets adding an additional 3 tasks for a total of 16 tasks in 46 languages with English prompts.
+    * xP3mt is a mixture of 13 training tasks in 46 languages with prompts in 20 languages; 
+    * xP3all consists of xP3 itself and evaluation datasets adding an additional 3 tasks.
 * Generateion Method: Build on the P3 task taxonomy and add 28 new multilingual datasets.
 * Paper: [Crosslingual Generalization through Multitask Finetuning](https://arxiv.org/pdf/2211.01786.pdf)
 * HuggingFace: https://huggingface.co/datasets/bigscience/xP3
 * License:
-
-
-## The Chinese Instruction Datasets
 
 ## Former Tables
 
