@@ -39,6 +39,13 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/yahma/alpaca-cleaned
 * License: [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en_GB)
 
+## [PhoebusSi/Alpaca-COT](https://github.com/PhoebusSi/alpaca-CoT) 
+* Language: EN
+* Summary: Alpaca-COT is a datset for Chain-of-Thoughts reasoning based on LLaMA and Alpaca.
+* Generateion Method: Use the template provided by FLAN to change the original dataset into various Chain-of-Thoughts forms, and then convert them to the instruction-input-output triplets.
+* HuggingFace: https://huggingface.co/datasets/QingyiSi/Alpaca-CoT
+* License: [Apache License](https://www.apache.org/licenses/LICENSE-2.0)
+
 ## [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
 * Size: 240,000 instructions
 * Language: EN
@@ -257,13 +264,10 @@ This is an on-going project. The format and explaination of the following conten
 * License:
 
 
-# Former Tables
-
-## Instruction Dataset Collection
+# Former Tables (to be removed)
 
 | Dataset | Size | Language | Domain | Generation method |
 |:---------| :---------:|:---------:|:---------:|:---------|
 | [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E5%85%B6%E4%BB%96%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A1%A5%E5%85%85) | 226 | CH | topic-specific | Generate Chinese instructions under various topics by humans, such as bussiness management, education, Romance of the Three Kingdoms, etc. |
 | [sahil280114/codealpaca](https://github.com/sahil280114/codealpaca) | 20023 | EN | Code | Self-instuct with prompts to focus on code generation/edting/optimization tasks, using text-davinci-003. |
-| [PhoebusSi/alpaca-CoT](https://github.com/PhoebusSi/alpaca-CoT) | EN | Chain-of-Thought | | |
 | [QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT) | | | | |
