@@ -240,13 +240,20 @@ This is an on-going project. The format and explaination of the following conten
 * Language: CH, DE, EN, JA, TC
 * Summary: Guanaco dataset builds upon the 175 tasks from Alpaca, containing 3 versions with different sizes and methods.
 * Generateion Method:
-  * Original Version: Rewrite 175 Alpaca seed tasks in different languages, and add new tasks specifically designed for English grammar analysis, natural language understanding, cross-lingual self-awareness, and explicit content recognition.
-  * Mixed Version: The original 175 tasks were translated into 4 versions and regenerated independently, excluding Deutsch.
-  * MIni Version: 52K instrucrion dataset, which is included in the Mixed Version.
-* HuggingFace:
-  * Original Version https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_chat_all-utf8.json
-  * Mixed Version https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_non_chat-utf8.json
-  * MIni Version https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/guanaco_non_chat_mini_52K-utf8.json
+  * Original Version (48967): Rewrite 175 Alpaca seed tasks in different languages, and add new tasks specifically designed for English grammar analysis, natural language understanding, cross-lingual self-awareness, and explicit content recognition.
+  * Mixed Version (279644): The original 175 tasks were translated into 4 versions and regenerated independently, excluding Deutsch.
+  * MIni Version (52224): 52K instrucrion dataset, which is included in the Mixed Version.
+* HuggingFace: https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/tree/main
+* License:
+
+## [JosephusCheung/GuanacoDataset QA](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset) 
+* Size: 205,999 instructions in total
+* Language: CH, DE, EN, JA
+* Summary: The Paper/General-QA dataset is a collection of questions and answers constructed for AI-generated papers or general texts in 4 languages. The purpose of this dataset is to generate paragraph-level answers to questions posed about lengthy documents such as PDFs. 
+* Generateion Method:
+  * The question dataset contains 106,707 questions, and the answer dataset contains 99,292 answers.
+  * Similar questions are combined to form a tree-like structure, and graph theory algorithms are used to process user questions, content summaries, and contextual logic.
+* HuggingFace: https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/tree/main/additional
 * License:
 
 
@@ -258,9 +265,5 @@ This is an on-going project. The format and explaination of the following conten
 |:---------| :---------:|:---------:|:---------:|:---------|
 | [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E5%85%B6%E4%BB%96%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A1%A5%E5%85%85) | 226 | CH | topic-specific | Generate Chinese instructions under various topics by humans, such as bussiness management, education, Romance of the Three Kingdoms, etc. |
 | [sahil280114/codealpaca](https://github.com/sahil280114/codealpaca) | 20023 | EN | Code | Self-instuct with prompts to focus on code generation/edting/optimization tasks, using text-davinci-003. |
-| [GuanacoDataset/.../general_ans-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/general_ans-utf8.json) | 75899 | CH, DE, EN, JA, TC | paragraph-level QA, Multi-lingual | |
-| [GuanacoDataset/.../general_questions-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/general_questions-utf8.json) | 82867 | CH, DE, EN, JA, TC | paragraph-level QA, Multi-lingual | Similar questions are combined to form a tree-like structure, and graph theory algorithms are used to process user questions, content summaries, and contextual logic. |
-| [GuanacoDataset/.../paper_answers-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/paper_answers-utf8.json) | 23393 | CH, DE, EN, JA, TC | paragraph-level QA, paper QA, Multi-lingual | |
-| [GuanacoDataset/.../paper_questions-utf8.json](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/blob/main/additional/paper_questions-utf8.json) | 23840 | CH, DE, EN, JA, TC | paragraph-level QA, paper QA, Multi-lingual | |
 | [PhoebusSi/alpaca-CoT](https://github.com/PhoebusSi/alpaca-CoT) | EN | Chain-of-Thought | | |
 | [QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT) | | | | |
