@@ -14,7 +14,7 @@ This is an on-going project. The format and explaination of the following conten
 - Size:
 - Language: 
 - Summary:
-- Generateion Method:
+- Generation Method:
 - Paper:
 - HuggingFace: (if applicable)
 - Demo: (if applicable)
