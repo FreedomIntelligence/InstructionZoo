@@ -10,7 +10,7 @@ This is an on-going project. We will soon add tags to classify the following dat
 - [Table of Contents](#table-of-contents)
 - [The template](#the-template)
 - [The English Instruction Datasets](#the-english-instruction-datasets)
-  * [tatsu-lab/Alpaca](#-tatsu-lab-alpaca--https---githubcom-tatsu-lab-stanford-alpaca-)
+  * [tatsu-lab/Alpaca](##tatsu-lab-alpaca)
   * [gururise/Cleaned Alpaca](#-gururise-cleaned-alpaca--https---githubcom-gururise-alpacadatacleaned-)
   * [PhoebusSi/Alpaca-COT](#-phoebussi-alpaca-cot--https---githubcom-phoebussi-alpaca-cot-)
   * [[QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT)](#-qingyisi-alpaca-cot--https---huggingfaceco-datasets-qingyisi-alpaca-cot-)
