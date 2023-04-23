@@ -9,10 +9,10 @@ This is an on-going project. The format and explaination of the following conten
 # The template
 
 ```
-## [({owner}/{project-name)}]{https://github.com/link/to/project}
+## [owner/project-name](https://github.com/link/to/project)
 
 * Size:
-* Language: 
+* Language:
 * Summary:
 * Generation Method:
 * Paper:
@@ -193,6 +193,77 @@ This is an on-going project. The format and explaination of the following conten
 * Generateion Method: 
   * Pick 429 instructions over 700 noisy instructions from Twitter
   * Use a similar method as Alpaca for generating the resulting instructions.
+* License:
+
+## [laion/OIG](https://laion.ai/blog/oig-dataset/)
+
+* Size: 30 tasks, 43M instructions
+* Language: EN
+* Summary: OIG contains instructions that are created using data augmentation from a diverse collection of data sources, and formatted in a dialogue style (… … pairs).
+* Generation Method:
+  * OIG is created by various LAION community members, consisting of 30 datasets and 43M instructions, with the goal of reaching 1 trillion tokens.
+  * OIG dataset can be divided roughly into 75% academic datasets, such as P3, Natural instructions and FLAN, and 25% datasets composed of various tasks, such as high school math, python coding and peoty generation.
+* HuggingFace: https://huggingface.co/datasets/laion/OIG
+* Demo: https://github.com/LAION-AI/Open-Assistant
+* License:
+
+## [baize/baize-chatbot](https://github.com/project-baize/baize-chatbot)
+
+* Size: 3 tasks, 100K+ instructions
+* Language: EN
+* Summary: Baize dataset is a high-quality multi-turn chat corpus by leveraging ChatGPT to engage in a conversation with itself, named self-chatting.
+* Generation Method:
+  * First apply a template to define the format and requirements of a conversation.
+  * Then use questions from Quora and Stack Overflow as seeds that set the topic for the chat.
+* Paper: [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/pdf/2304.01196.pdf)
+* HuggingFace: (if applicable)
+* Demo: https://huggingface.co/spaces/project-baize/Baize-7B
+* License:
+
+## [lightaime/camel](https://github.com/lightaime/camel)
+
+* Size: 115K instructions
+* Language: EN
+* Summary: Camel dataset introduces a novel communicative agent framework named role-playing.
+* Generation Method:
+  * The prompt engineering in Camel consists of three prompts, the task specifier prompt, the assistant system prompt, and  the user system prompt. The scenarios in Camel include AI Society and Code.
+  * Authors also create Data Generation Prompts to generate meta data by LLMs. 50 assistant roles and 50 user roles are generated for AI Society. 20 programming languages and 50 domains are generated for Code.
+* Paper: [CAMEL: Communicative Agents for "Mind" Exploration of Large Scale Language Model Society](https://arxiv.org/pdf/2303.17760.pdf)
+* HuggingFace: https://huggingface.co/camel-ai
+* Demo: https://www.camel-ai.org/
+* License:
+
+## [thunlp/UltraChat](https://github.com/thunlp/UltraChat)
+
+* Size: 657K instructions
+* Language: EN
+* Summary: UltraChat is a multi-round dialogue dataset powered by Turbo APIs, composed of three sectors, namely Questions about the World, Writing and Creation, and Assistance on Existent Materials.
+* Generation Method:
+  * Two separate ChatGPT Turbo APIs are adopted in generation, where one plays the role of the user to generate queries and the other generates the response. 
+  * We instruct the user model with carefully designed prompts to mimic human user behavior and call the two APIs iteratively.
+* HuggingFace: https://huggingface.co/datasets/stingning/ultrachat
+* License:
+
+## [databrickslabs/doll](https://github.com/databrickslabs/dolly)
+
+* Size: 7 tasks, 15,000 instructions
+* Language: EN
+* Summary: Dolly is a human-generated corpus, whose categories are Creative Writing, Closed QA, Open QA, Summarization, Information Extraction, Classification and Brainstorming.
+* Generation Method:
+  * Databricks employees were invited to create prompt / response pairs in each of eight different instruction categories.
+  * For instruction categories that require an annotator to consult a reference text, contributors selected passages from Wikipedia for particular subsets of instruction categories. 
+* HuggingFace: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+* License:
+
+## [owner/project-name](https://github.com/link/to/project)
+
+* Size:
+* Language:
+* Summary:
+* Generation Method:
+* Paper:
+* HuggingFace: (if applicable)
+* Demo: (if applicable)
 * License:
 
 
