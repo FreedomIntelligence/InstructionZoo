@@ -6,12 +6,14 @@ This is an on-going project. We will soon add tags to classify the following dat
 
 # Table of Contents
 
+- [InstructionZoo](#instructionzoo)
+- [Table of Contents](#table-of-contents)
 - [The template](#the-template)
 - [The English Instruction Datasets](#the-english-instruction-datasets)
-  * [tatsu-lab/Alpaca](#tatsu-lab-alpaca)
-  * [gururise/Cleaned Alpaca](#gururise-cleaned-alpaca)
-  * [PhoebusSi/Alpaca-COT](#-phoebussi-alpaca-cot--https---githubcom-phoebussi-alpaca-cot-)
-  * [[QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT)](#qingyisi-alpaca-cot--https---huggingfaceco-datasets-qingyisi-alpaca-cot-)
+  - [[tatsu-lab/Alpaca](https://github.com/tatsu-lab/stanford_alpaca)](#-tatsu-lab-alpaca--https---githubcom-tatsu-lab-stanford-alpaca-)
+  - [[gururise/Cleaned Alpaca](https://github.com/gururise/AlpacaDataCleaned)](#-gururise-cleaned-alpaca--https---githubcom-gururise-alpacadatacleaned-)
+  - [[PhoebusSi/Alpaca-COT](https://github.com/PhoebusSi/alpaca-CoT)](#-phoebussi-alpaca-cot--https---githubcom-phoebussi-alpaca-cot-)
+  * [[QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT)](#-qingyisi-alpaca-cot--https---huggingfaceco-datasets-qingyisi-alpaca-cot-)
   * [[orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions)](#-orhonovich-unnatural-instructions--https---githubcom-orhonovich-unnatural-instructions-)
   * [[bigscience/PromptSource](https://github.com/bigscience-workshop/promptsource)](#-bigscience-promptsource--https---githubcom-bigscience-workshop-promptsource-)
   * [[bigscience/P3](https://github.com/bigscience-workshop/promptsource)](#-bigscience-p3--https---githubcom-bigscience-workshop-promptsource-)
