@@ -11,14 +11,14 @@ This is an on-going project. The format and explaination of the following conten
 ```
 ## [({owner}/{project-name)}]{https://github.com/link/to/project}
 
-- Size:
-- Language: 
-- Summary:
-- Generation Method:
-- Paper:
-- HuggingFace: (if applicable)
-- Demo: (if applicable)
-- License:
+* Size:
+* Language: 
+* Summary:
+* Generation Method:
+* Paper:
+* HuggingFace: (if applicable)
+* Demo: (if applicable)
+* License:
 ```
 
 # The English Instruction Datasets
@@ -118,6 +118,17 @@ This is an on-going project. The format and explaination of the following conten
 * Language: EN
 * Summary:  Flan 2022 Collection combines Flan 2021, P3 Dataset Family, Super-Natural Instructions, with some additional reasoning, dialog, and program synthesis datasets.
 * Paper: [The Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf)
+* License:
+
+## [facebookresearch/metasqe/OPT-IML](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT-IML)
+
+* Size: 1,667 tasks, 3,128 instructions
+* Language: EN
+* Summary: OPT-IML dataset expands the Super-Natural-Instructions benchmark with the task collections from multiple existing work on instruction-tuning, cross-task transfer studies, and area-specific task consolidation.
+* Generation Method:
+  * Benchmarks included in OPT-IML are Super-Natural-Instructions, PromptSource, CrossFit, FLAN, ExMix, T5, UnifiedSKG, and Reasoning. Authors only kept partial tasks from CrossFit, ExMix and T5 due to the significant overlap.
+  * To organize the Instruction schema, authors broadly classify the instructions in these benchmarks into two categories, dataset-level and instance-level.
+* Paper: [OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization](https://arxiv.org/pdf/2212.12017.pdf)
 * License:
 
 
