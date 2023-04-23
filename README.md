@@ -201,6 +201,12 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization](https://arxiv.org/pdf/2212.12017.pdf)
 * License:
 
+## [THUDM/GLM-130B](https://github.com/facebookresearch/metaicl)
+
+* Size:  74 tasks
+* Language:  Multilingual
+* Paper:  [GLM-130B: An Open Bilingual Pre-trained Model](https://arxiv.org/pdf/2210.02414.pdf)
+
 ## [laion/OIG](https://laion.ai/blog/oig-dataset/)
 
 * Size: 30 tasks, 43M instructions
@@ -260,6 +266,16 @@ This is an on-going project. The format and explaination of the following conten
   * For instruction categories that require an annotator to consult a reference text, contributors selected passages from Wikipedia for particular subsets of instruction categories. 
 * HuggingFace: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 * License:
+
+## [Instruction-Tuning-with-GPT-4/GPT-4-LLM](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)
+
+* Paper: [Instruction Tuning with GPT-4](https://arxiv.org/pdf/2304.03277.pdf)
+
+## [ShareGPT](https://github.com/domeccleston/sharegpt)
+
+* Summary: ShareGPT is an open-source Chrome Extension for you to share your wildest ChatGPT conversations with one click.
+* Generation Method: Collect chats with ChatGPT from its users.
+* Demo: https://sharegpt.com/
 
 ## [stanfordnlp/SHP](https://huggingface.co/datasets/stanfordnlp/SHP)
 
