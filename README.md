@@ -2,7 +2,7 @@
 
 A collection of open-source Instruction-tuning dataset to train chat-based LLMs (ChatGPT,LLaMA,Alpaca).
 
-This is an on-going project. The format and explaination of the following contents will be updated soon. (By Zhihan)
+This is an on-going project. We will soon add tags to classify the following datasets and continuously update our collection.
 
 # Table of Contents
 
@@ -45,6 +45,9 @@ This is an on-going project. The format and explaination of the following conten
 * Generateion Method: Use the template provided by FLAN to change the original dataset into various Chain-of-Thoughts forms, and then convert them to the instruction-input-output triplets.
 * HuggingFace: https://huggingface.co/datasets/QingyiSi/Alpaca-CoT
 * License: [Apache License](https://www.apache.org/licenses/LICENSE-2.0)
+
+## [QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT) 
+* Empty for now. Soon to update.
 
 ## [orhonovich/unnatural-instructions](https://github.com/orhonovich/unnatural-instructions) 
 * Size: 240,000 instructions
@@ -327,7 +330,9 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 * License: CC-BY-SA
 
+## [f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 
+* Empty for now. Soon to update.
 
 # The Chinese Instruction Datasets
 
@@ -404,6 +409,8 @@ This is an on-going project. The format and explaination of the following conten
 * License:
 
 ## [PlexPt/awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
+
+* Empty for now. Soon to update.
 
 
 ## Chinese Alpaca
@@ -484,11 +491,12 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/JosephusCheung/GuanacoDataset/tree/main/additional
 * License:
 
+# The Code Instruction Datasets
 
-# Former Tables (to be removed)
-
-| Dataset | Size | Language | Domain | Generation method |
-|:---------| :---------:|:---------:|:---------:|:---------|
-| [hikarming/alpaca_chinese_dataset](https://github.com/hikariming/alpaca_chinese_dataset/tree/main/%E5%85%B6%E4%BB%96%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A1%A5%E5%85%85) | 226 | CH | topic-specific | Generate Chinese instructions under various topics by humans, such as bussiness management, education, Romance of the Three Kingdoms, etc. |
-| [sahil280114/codealpaca](https://github.com/sahil280114/codealpaca) | 20023 | EN | Code | Self-instuct with prompts to focus on code generation/edting/optimization tasks, using text-davinci-003. |
-| [QingyiSi/Alpaca-CoT](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT) | | | | |
+## [sahil280114/codealpaca](https://github.com/sahil280114/codealpaca) 
+* Size: 20,023 instructions
+* Language: EN
+* Summary: 
+* Generateion Method: Self-instuct with prompts to focus on code generation/edting/optimization tasks, using text-davinci-003.
+* HuggingFace:
+* License:
