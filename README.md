@@ -353,16 +353,57 @@ This is an on-going project. The format and explaination of the following conten
 * HuggingFace: https://huggingface.co/datasets/BAAI/COIG
 * License: MIT License
 
-## [owner/project-name](https://github.com/link/to/project)
+## [CLUEbenchmark/pCLUE](https://github.com/CLUEbenchmark/pCLUE)
 
-* Size:
-* Language:
-* Summary:
-* Generation Method:
-* Paper:
-* HuggingFace: (if applicable)
-* Demo: (if applicable)
+* Size: 9 tasks, 73 instructions
+* Language: CH
+* Summary: pCLUE is a large-scale prompt-based dataset for multi-task and zero-shot learning in Chinese.
+* Generation Method: pCLUE is based on existing datasets.
+* HuggingFace: https://huggingface.co/datasets/wbbbbb/pclue
+* Demo: https://cluebenchmarks.com/pclue.html
 * License:
+
+## [ydli-ai/CSL](https://github.com/ydli-ai/csl)
+
+* Size: 4 tasks, 396,209 instructions
+* Language: CH
+* Summary: CSL is a large-scale Chinese scientific literature dataset.
+* Generation Method:
+  * Obtain the paper’s meta-information from the National Engineering Research Center for Science and Technology Resources Sharing Service (NSTR) dated from 2010 to 2020.
+  * Label papers with categories and disciplines, with the assistance of volunteers.
+  * The data format in CSL is <T,A,K,c,d>, where T is the title, A is the abstract, K is a list of keywords, c is the category label and d is the discipline label.
+* Paper: [CSL: A Large-scale Chinese Scientific Literature Dataset](https://arxiv.org/pdf/2209.05034.pdf)
+* License:
+
+## [YeungNLP/Firefly](https://github.com/yangjianxin1/Firefly)
+
+* Size: 23 tasks, 1.1M instructions
+* Language: CH
+* Summary: Firefly dataset is a high-quality Chinese instruction-tuning dataset. 
+* Generation Method: For each task, human experts write many templates to ensure the quality and diversity of Firefly dataset.
+* HuggingFace: https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M
+* License:
+
+## [TsinghuaAI/CUGE](https://github.com/TsinghuaAI/CUGE)
+
+* Size: 18 tasks
+* Language: CH
+* Summary: CUGE selects and organizes datasets in a language capability-task-dataset hierarchical framework, covering 7 language capabilities, 18 mainstream NLP tasks and 21 representative datasets.
+* Paper: [CUGE: A Chinese Language Understanding and Generation Evaluation Benchmark](https://arxiv.org/pdf/2112.13610.pdf)
+* Demo: http://cuge.baai.ac.cn/#/
+* License:
+
+## [ydli-ai/Chinese-ChatLLaMA](https://github.com/ydli-ai/Chinese-ChatLLaMA)
+
+* Language: Multilingual
+* License:
+
+## ZeroPrompt
+
+* Paper: [ZeroPrompt: Scaling Prompt-Based Pretraining to 1,000 Tasks Improves Zero-Shot Generalization](https://arxiv.org/pdf/2201.06910.pdf)
+* License:
+
+## [PlexPt/awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
 
 
 ## Chinese Alpaca
