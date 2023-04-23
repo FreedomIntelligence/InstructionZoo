@@ -120,17 +120,6 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [The Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf)
 * License:
 
-## [facebookresearch/metasqe/OPT-IML](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT-IML)
-
-* Size: 1,667 tasks, 3,128 instructions
-* Language: EN
-* Summary: OPT-IML dataset expands the Super-Natural-Instructions benchmark with the task collections from multiple existing work on instruction-tuning, cross-task transfer studies, and area-specific task consolidation.
-* Generation Method:
-  * Benchmarks included in OPT-IML are Super-Natural-Instructions, PromptSource, CrossFit, FLAN, ExMix, T5, UnifiedSKG, and Reasoning. Authors only kept partial tasks from CrossFit, ExMix and T5 due to the significant overlap.
-  * To organize the Instruction schema, authors broadly classify the instructions in these benchmarks into two categories, dataset-level and instance-level.
-* Paper: [OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization](https://arxiv.org/pdf/2212.12017.pdf)
-* License:
-
 ## [LianjiaTech/BELLE 1.5M](https://github.com/LianjiaTech/BELLE/tree/main/1.5M) 
 * Size: 175 seed instructions, 1.5M instructions
 * Language: CH
@@ -168,6 +157,48 @@ This is an on-going project. The format and explaination of the following conten
 * Generateion Method: 
   * Pick 429 instructions over 700 noisy instructions from Twitter
   * Use a similar method as Alpaca for generating the resulting instructions.
+* License:
+
+## ExMix
+
+* Paper: [ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning](https://arxiv.org/pdf/2111.10952.pdf)
+* Download: ExMix's official data is not open-sourced, but you can use the following URLs to download partial data in ExMiX.
+  * [COGS](https://github.com/najoungkim/COGS)
+  * [Shakespearizing-Modern-English](https://github.com/harsh19/)
+  * [Shakespearizing-Modern-English StylePTB](https://github.com/lvyiwei1/StylePTB)
+  * [gpt-2-output-datase](https://github.com/openai/gpt-2-output-dataset)
+  * [Parsing to FunQL](https://github.com/JasperGuo/Unimer)
+  * [UKP](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2345)
+  * [NewsQuizQA](https://github.com/google-research-datasets/NewsQuizQA)
+  * [Dialoglue](https://github.com/alexa/dialoglue)
+
+
+## [UnifiedSKG](https://github.com/hkunlp/unifiedskg)
+
+* Paper: [UnifiedSKG: Unifying and Multi-Tasking Structured Knowledge Grounding with Text-to-Text Language Models](https://arxiv.org/pdf/2201.05966.pdf)
+* Download: https://drive.google.com/drive/folders/1GXigUv3MU-Sh4XiY6Wz3xVeNT_s0SuON
+
+## [MetaICL](https://github.com/facebookresearch/metaicl)
+
+* Paper: [MetaICL: Learning to Learn In Context](https://arxiv.org/pdf/2110.15943.pdf)
+
+
+## [openai/InstructionGPT](https://github.com/openai/following-instructions-human-feedback)
+
+* Size: 112,801 instructions
+* Language: EN
+* Generation Method: Human Annotated
+* Paper: [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155.pdf)
+
+## [facebookresearch/metasqe/OPT-IML](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT-IML)
+
+* Size: 1,667 tasks, 3,128 instructions
+* Language: EN
+* Summary: OPT-IML dataset expands the Super-Natural-Instructions benchmark with the task collections from multiple existing work on instruction-tuning, cross-task transfer studies, and area-specific task consolidation.
+* Generation Method:
+  * Benchmarks included in OPT-IML are Super-Natural-Instructions, PromptSource, CrossFit, FLAN, ExMix, T5, UnifiedSKG, and Reasoning. Authors only kept partial tasks from CrossFit, ExMix and T5 due to the significant overlap.
+  * To organize the Instruction schema, authors broadly classify the instructions in these benchmarks into two categories, dataset-level and instance-level.
+* Paper: [OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization](https://arxiv.org/pdf/2212.12017.pdf)
 * License:
 
 ## [laion/OIG](https://laion.ai/blog/oig-dataset/)
@@ -279,6 +310,8 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection](https://arxiv.org/pdf/2301.07597.pdf)
 * HuggingFace: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 * License: CC-BY-SA
+
+
 
 # The Chinese Instruction Datasets
 
