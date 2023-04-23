@@ -131,31 +131,6 @@ This is an on-going project. The format and explaination of the following conten
 * Paper: [OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization](https://arxiv.org/pdf/2212.12017.pdf)
 * License:
 
-
-# The Chinese Instruction Datasets
-
-## [FlagOpen/FlagInstruct](https://github.com/flagopen/flaginstruct)
-* Size: 2K tasks, 191,191 instructions in total
-* Language: CH
-* Summary: Chinese Open Instruction Generalist (COIG) is a Chinese instruction dataset consisting of 4 sub-tasks.
-* Generateion Method:
-  * Task 1: Translated Instructions (67,798)
-    * Translate the following datasets into Chinese: 1,616 task descriptions in Super-Natural-Instruct v2 along with a single instance for each of them; 175 seed tasks in Self-instruct; 66,007 instructions from Unnatural Instructions.
-  * Task 2: Exam Instructions (63,532)
-    * Exams include The Chinese National College Entrance Examination (高考), Middle School Entrance Examinations (中考), and Civil Servant Examination (公务员考试).
-    * Turn them into Chain-of-Thought (CoT) corpus by extracting six informative elements from original exam questions, including instruction, question context, question, answer, answer analysis, and coarse-grained subject.
-  * Task 3: Human Value Alignment Instructions (34,471)
-    * Select a set of samples that present shared human values in the Chinese-speaking world, and get 50 seed instructions and 3k resulting instructions.
-    * Some additional sets of samples that present regional-culture or country-specific human values are also added.
-  * Task 4: Counterfactural Correction Multi-round Chat (13,653)
-    * The aim is to alleviate and resolve the pain points of hallucination and factual inconsistency in current LLMs.
-    * Based on [CN-DBpedia knowledge graph dataset](https://link.springer.com/chapter/10.1007/978-3-319-60045-1_44), CCMC has ~13,000 dialogues with an average of 5 rounds per dialogue, resulting in ~65,000 rounds of chat.
-  * Leetcode Instructions (11,737)
-    * 2,589 programming questions from [Leetcode](https://github.com/doocs/leetcode).
-* Paper: [Chinese Open Instruction Generalist: A Preliminary Release](https://arxiv.org/pdf/2304.07987.pdf)
-* HuggingFace: https://huggingface.co/datasets/BAAI/COIG
-* License: MIT License
-
 ## [LianjiaTech/BELLE 1.5M](https://github.com/LianjiaTech/BELLE/tree/main/1.5M) 
 * Size: 175 seed instructions, 1.5M instructions
 * Language: CH
@@ -254,6 +229,80 @@ This is an on-going project. The format and explaination of the following conten
   * For instruction categories that require an annotator to consult a reference text, contributors selected passages from Wikipedia for particular subsets of instruction categories. 
 * HuggingFace: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 * License:
+
+## [stanfordnlp/SHP](https://huggingface.co/datasets/stanfordnlp/SHP)
+
+* Size: 18 tasks, 385K instructions
+* Language: EN
+* Summary: SHP is a dataset of 385K collective human preferences over responses to questions/instructions in 18 different subject areas, from cooking to legal advice. It is used to train RLHF reward models and NLG evaluation models.
+* Generation Method:
+  * The data is sourced from Reddit, which is a public forum organized into topic-specific fora called subreddits.
+  * Each example is a Reddit post with a question/instruction and a pair of top-level comments for that post.
+* Paper: [Understanding Dataset Difficulty with V
+-Usable Information](https://proceedings.mlr.press/v162/ethayarajh22a/ethayarajh22a.pdf)
+* HuggingFace: https://huggingface.co/datasets/stanfordnlp/SHP
+* License:
+
+## [Anthropic/hh-rlhf](https://github.com/anthropics/hh-rlhf)
+
+* Size: 169,550 instructions
+* Language: EN
+* Summary: HH-RLHF is a dataset of human preferences over models' responses to questions/instructions.
+* Generation Method:
+  * Hire crowdworkers to interact with models through two interfaces, helpfulness interface and harmlessness (red-teaming) interface respectively.
+  * For the helpfulness dataset, ask crowdworkers to have open-ended conversations with our models, asking for help, advice, or for the model to accomplish a task, and to choose the model response that was more helpful.
+  * For the harmlessness (red-teaming) dataset, ask crowdworkers to attempt to elicit harmful responses from our models, and to choose the more harmful response offered by the models.
+* Paper:
+  * [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](https://arxiv.org/pdf/2204.05862.pdf)
+  * [Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned](https://arxiv.org/pdf/2209.07858.pdf)
+* HuggingFace: https://huggingface.co/datasets/Anthropic/hh-rlhf
+* License:
+
+## [HuggingFaceH4/stack-exchange-preferences](https://huggingface.co/datasets/HuggingFaceH4/stack-exchange-preferences)
+
+* Size: 10M instructions
+* Language: EN
+* Summary: Stack-Exchange-Preferences dataset contains questions and answers from the Stack Overflow Data Dump for the purpose of preference model training.
+* Generation Method:
+* Paper: [A General Language Assistant as a Laboratory for Alignment](https://arxiv.org/pdf/2112.00861.pdf)
+* HuggingFace: https://huggingface.co/datasets/HuggingFaceH4/stack-exchange-preferences
+* License:
+
+## [Hellp-SimpleAI/HC3](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection)
+
+* Size: 12 tasks, 37,175 instructions
+* Language: EN, CH
+* Summary: HC3 is a comparison corpus that consists of both human and ChatGPT answers to the same questions.
+* Generation Method:
+  * Human Answers Collection: The first part is publicly available question-answering datasets, whose answers are given by experts or high-voted. The second part is built by constructing question-answer pairs from wiki sources.
+  * ChatGPT Answers Collection: use ChatGPT to generate answers to the questions in Human Answers Collection
+* Paper: [How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection](https://arxiv.org/pdf/2301.07597.pdf)
+* HuggingFace: https://huggingface.co/datasets/Hello-SimpleAI/HC3
+* License: CC-BY-SA
+
+# The Chinese Instruction Datasets
+
+## [FlagOpen/FlagInstruct](https://github.com/flagopen/flaginstruct)
+* Size: 2K tasks, 191,191 instructions in total
+* Language: CH
+* Summary: Chinese Open Instruction Generalist (COIG) is a Chinese instruction dataset consisting of 4 sub-tasks.
+* Generateion Method:
+  * Task 1: Translated Instructions (67,798)
+    * Translate the following datasets into Chinese: 1,616 task descriptions in Super-Natural-Instruct v2 along with a single instance for each of them; 175 seed tasks in Self-instruct; 66,007 instructions from Unnatural Instructions.
+  * Task 2: Exam Instructions (63,532)
+    * Exams include The Chinese National College Entrance Examination (高考), Middle School Entrance Examinations (中考), and Civil Servant Examination (公务员考试).
+    * Turn them into Chain-of-Thought (CoT) corpus by extracting six informative elements from original exam questions, including instruction, question context, question, answer, answer analysis, and coarse-grained subject.
+  * Task 3: Human Value Alignment Instructions (34,471)
+    * Select a set of samples that present shared human values in the Chinese-speaking world, and get 50 seed instructions and 3k resulting instructions.
+    * Some additional sets of samples that present regional-culture or country-specific human values are also added.
+  * Task 4: Counterfactural Correction Multi-round Chat (13,653)
+    * The aim is to alleviate and resolve the pain points of hallucination and factual inconsistency in current LLMs.
+    * Based on [CN-DBpedia knowledge graph dataset](https://link.springer.com/chapter/10.1007/978-3-319-60045-1_44), CCMC has ~13,000 dialogues with an average of 5 rounds per dialogue, resulting in ~65,000 rounds of chat.
+  * Leetcode Instructions (11,737)
+    * 2,589 programming questions from [Leetcode](https://github.com/doocs/leetcode).
+* Paper: [Chinese Open Instruction Generalist: A Preliminary Release](https://arxiv.org/pdf/2304.07987.pdf)
+* HuggingFace: https://huggingface.co/datasets/BAAI/COIG
+* License: MIT License
 
 ## [owner/project-name](https://github.com/link/to/project)
 
