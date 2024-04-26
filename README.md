@@ -19,6 +19,7 @@ This is an on-going project. We will soon add tags to classify the following dat
   * [allenai/super-natural-instructions](https://github.com/allenai/natural-instructions)
   * [google-research/FLAN 2021](https://github.com/google-research/flan)
   * [google-research/FLAN 2022 Collection](https://github.com/google-research/FLAN/tree/main/flan/v2)
+  * [tasksource-instruct](https://huggingface.co/datasets/tasksource/tasksource-instruct-v0)
   * [LianjiaTech/BELLE 1.5M](https://github.com/LianjiaTech/BELLE/tree/main/1.5M)
   * [LianjiaTech/BELLE 10M](https://github.com/LianjiaTech/BELLE/tree/main/10M)
   * [XueFuzhao/InstructionWild](https://github.com/XueFuzhao/InstructionWild)
@@ -182,6 +183,14 @@ This is an on-going project. We will soon add tags to classify the following dat
 * Summary:  Flan 2022 Collection combines Flan 2021, P3 Dataset Family, Super-Natural Instructions, with some additional reasoning, dialog, and program synthesis datasets.
 * Paper: [The Flan Collection: Designing Data and Methods for Effective Instruction Tuning](https://arxiv.org/pdf/2301.13688.pdf)
 * License:
+
+## [tasksource-instruct](https://github.com/sileod/tasksource)
+* Size: 475 tasks, 4.7M instructions
+* Language: EN
+* Summary:  Tasksource datasets recasted as instructions with minimal but unambiguous templates. This is particularly useful for classification and reasoning.
+* HuggingFace: https://huggingface.co/datasets/tasksource/tasksource-instruct-v0
+* Paper: [tasksource: A Dataset Harmonization Framework for Streamlined NLP Multi-Task Learning and Evaluation](https://arxiv.org/abs/2301.05948)
+* License: 
 
 ## [LianjiaTech/BELLE 1.5M](https://github.com/LianjiaTech/BELLE/tree/main/1.5M) 
 * Size: 175 seed instructions, 1.5M instructions
